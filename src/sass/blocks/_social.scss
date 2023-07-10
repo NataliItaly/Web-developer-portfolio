@@ -1,0 +1,33 @@
+.social {
+  position: fixed;
+  top: 210px;
+  left: 53px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  &__line {
+    width: 3px;
+    height: 70px;
+    background-color: #000;
+  }
+  &__title {
+    width: 25px;
+    height: 60px;
+    span {
+      display: block;
+      transform: rotate(-90deg) translate(-80%, -5%);
+      margin-top: 15px;
+    }
+  }
+  &__item {
+    img {
+      &:hover {
+        filter: invert(66%) sepia(99%) saturate(1989%) hue-rotate(358deg)
+          brightness(102%) contrast(101%);
+      }
+    }
+  }
+}

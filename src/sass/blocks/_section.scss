@@ -1,0 +1,19 @@
+.section {
+  &_promo {
+    padding: 200px 0 360px;
+    background: url(../img/start-screen-bg.jpg) center / cover no-repeat;
+    position: relative;
+  }
+  &__main-title {
+    max-width: 380px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 25px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
