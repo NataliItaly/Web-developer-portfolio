@@ -1,4 +1,5 @@
 .section {
+  padding-top: 120px;
   &_promo {
     padding: 200px 0 360px;
     background: url(../img/start-screen-bg.jpg) center / cover no-repeat;
@@ -11,9 +12,43 @@
     line-height: 60px;
     margin-bottom: 25px;
   }
+  &__title {
+    width: fit-content;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: $main-color;
+    }
+  }
   &__subtitle {
+    width: fit-content;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
+  }
+  &_center {
+    .section__subtitle {
+      margin: 0 auto 10px;
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .section__title {
+      margin: 0 auto 60px;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }

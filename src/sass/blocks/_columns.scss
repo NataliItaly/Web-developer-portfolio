@@ -1,0 +1,26 @@
+.columns {
+  display: flex;
+  &_big {
+    gap: 70px;
+    flex-direction: row-reverse;
+  }
+  &_min {
+    gap: 20px;
+  }
+  &__text {
+    max-width: 570px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__decorated {
+    border-left: 1px solid $text-color;
+    position: relative;
+  }
+  &__img {
+    img {
+      max-width: 100%;
+    }
+  }
+}

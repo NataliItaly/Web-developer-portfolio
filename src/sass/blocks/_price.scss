@@ -1,0 +1,18 @@
+.price {
+  &__item {
+    width: 355px;
+    position: relative;
+    div {
+      padding-left: 25px;
+    }
+  }
+  &__title {
+    padding-left: 25px;
+  }
+  &__number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 700;
+  }
+}

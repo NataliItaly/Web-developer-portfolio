@@ -1,0 +1,27 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-bottom: 120px;
+  &__item {
+    width: 270px;
+    height: 270px;
+    padding: 25px 30px;
+    border: 1px solid $text-color;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 12px;
+  }
+  &__img {
+    height: 65px;
+    max-width: 160px;
+  }
+}

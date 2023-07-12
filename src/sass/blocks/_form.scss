@@ -1,0 +1,33 @@
+.form {
+  padding-top: 20px;
+  &__legend {
+    margin-bottom: 30px;
+  }
+  &__inputs-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  &__fieldset {
+    position: relative;
+  }
+  &__input {
+    width: 280px;
+    padding: 14px 20px;
+    font-size: 12px;
+    border: 1px solid $text-color;
+  }
+  &__label {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    padding: 2px 8px;
+    background-color: #fff;
+    border: none;
+  }
+  &__textarea {
+    width: 100%;
+    resize: none;
+  }
+}

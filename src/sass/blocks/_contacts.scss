@@ -1,0 +1,13 @@
+.contacts {
+  padding: 0 50px;
+  &__social-item {
+    img {
+      &:hover {
+        filter: invert(66%) sepia(99%) saturate(1989%) hue-rotate(358deg)
+          brightness(102%) contrast(101%);
+      }
+    }
+  }
+  &__text {
+  }
+}

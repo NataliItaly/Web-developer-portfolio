@@ -1,6 +1,29 @@
 .group {
   display: flex;
-  &_min {
-    gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 40px;
+  &_about {
+    .group__item {
+      width: 260px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__subtitle {
+    margin-bottom: 12px;
+  }
+  &__text {
+    max-width: 375px;
+  }
+  &_skills {
+    gap: 45px;
   }
 }
