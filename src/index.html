@@ -294,7 +294,12 @@
               </div>
             </div>
             <div class="columns__img">
-              <img src="img/about-img.jpg" alt="" />
+              <img
+                srcset="img/about-img.jpg 300w, img/about-img-min.jpg 400w"
+                sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"
+                src="img/about-img.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -708,12 +713,14 @@
                     <input
                       type="checkbox"
                       name="policy-checkbox"
-                      id="policy-checkbox" required
+                      id="policy-checkbox"
+                      required
                     />
                     <label
                       for="policy-checkbox"
                       class="form__label form__label_policy"
-                      >I agree with the <a href="">privacy policy</a></label
+                      >I agree with the
+                      <a href="policy.html">privacy policy</a></label
                     >
                   </p>
                 </div>
