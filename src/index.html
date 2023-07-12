@@ -675,6 +675,7 @@
                       id="name"
                       type="text"
                       name="name"
+                      required
                     />
                     <label for="name" class="form__label">Your name</label>
                   </fieldset>
@@ -684,6 +685,7 @@
                       id="email"
                       type="email"
                       name="email"
+                      required
                     />
                     <label for="email" class="form__label">Your email</label>
                   </fieldset>
@@ -696,11 +698,25 @@
                   ></textarea>
                   <label for="text" class="form__label">Your message</label>
                 </fieldset>
-                <input
-                  type="submit"
-                  value="Send"
-                  class="button button_active"
-                />
+                <div class="form__inputs-wrapper">
+                  <input
+                    type="submit"
+                    value="Send message"
+                    class="button button_active form__button"
+                  />
+                  <p class="form__policy">
+                    <input
+                      type="checkbox"
+                      name="policy-checkbox"
+                      id="policy-checkbox" required
+                    />
+                    <label
+                      for="policy-checkbox"
+                      class="form__label form__label_policy"
+                      >I agree with the <a href="">privacy policy</a></label
+                    >
+                  </p>
+                </div>
               </form>
             </div>
             <div class="columns__img">

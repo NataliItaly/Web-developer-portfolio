@@ -6,17 +6,23 @@
   &__inputs-wrapper {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 25px;
-    margin-bottom: 30px;
   }
   &__fieldset {
     position: relative;
+    border: none;
+    margin-bottom: 30px;
   }
   &__input {
-    width: 280px;
+    width: 270px;
     padding: 14px 20px;
     font-size: 12px;
     border: 1px solid $text-color;
+  }
+  &__button {
+    border: none;
   }
   &__label {
     position: absolute;
@@ -25,9 +31,17 @@
     padding: 2px 8px;
     background-color: #fff;
     border: none;
+    &_policy {
+      position: static;
+    }
   }
   &__textarea {
     width: 100%;
     resize: none;
+  }
+  &__policy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
 }
