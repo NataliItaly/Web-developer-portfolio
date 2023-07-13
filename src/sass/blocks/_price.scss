@@ -1,4 +1,6 @@
 .price {
+  gap: 30px;
+  justify-content: space-evenly;
   &__item {
     width: 355px;
     position: relative;

@@ -1,7 +1,7 @@
 .social {
   position: fixed;
   top: 210px;
-  left: 53px;
+  left: 25px;
   z-index: 10;
   &__list {
     display: flex;
@@ -30,5 +30,11 @@
           brightness(102%) contrast(101%);
       }
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .social {
+    display: none;
   }
 }

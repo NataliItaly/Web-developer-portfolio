@@ -27,3 +27,21 @@
     gap: 45px;
   }
 }
+
+@media (max-width: 1060px) {
+  .group {
+    gap: 20px;
+    &_skills {
+      gap: 45px;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .group {
+    &_experience {
+      justify-content: center;
+    }
+  }
+}

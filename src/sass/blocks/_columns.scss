@@ -3,6 +3,7 @@
   &_big {
     gap: 70px;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
   &_min {
     gap: 20px;
@@ -20,7 +21,37 @@
   }
   &__img {
     img {
-      max-width: 100%;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .columns {
+    &_big {
+      justify-content: center;
+    }
+    &__img_contacts {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .columns {
+    &_experience {
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .columns {
+    &__img {
+      img {
+        width: 300px;
+      }
     }
   }
 }

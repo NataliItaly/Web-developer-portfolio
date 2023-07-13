@@ -37,3 +37,9 @@
 .p-l-45 {
   padding-left: 45px;
 }
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 0 10px;
+  }
+}
